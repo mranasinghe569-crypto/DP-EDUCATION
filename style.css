@@ -1,0 +1,325 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+header {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 99%;
+    top: 0;
+    z-index: 1000;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    height: 100vh;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.login-button {
+    width: 80px;
+    height: 30px;
+    border: 2px solid white;
+    background-color: rgb(255, 255, 255, 0);
+    border-radius: 10px;
+    color: white;
+}
+
+.login-button:hover {
+    background-color: white;
+    color:black;
+    cursor: pointer;
+}
+
+.contact-details {
+    flex: 1;
+}
+
+hr {
+    width: 50%;
+    margin: 0;
+}
+
+.org-details {
+    flex: 2;
+    text-align: center;
+}
+
+.org-details img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.org-details p {
+    font-size: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.social-icons {
+    margin-bottom: 40px;
+}
+
+.social-icons {
+    margin-bottom: 40px;
+}
+
+.link-container {
+    flex: 1;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li::before {
+    content: "\2192";  /* Unicode character for right arrow (→) */
+    margin-right: 8px;  ; /* Adjust the spacing between the arrow and text */
+}
+
+.des {
+    margin: 10px;
+}
+
+.des h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.pl-container {
+    background-color: #f8e4e4;
+    margin: 0;
+    padding: 40px;
+}
+
+.personalized-learning-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.learn-more-button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff8c00;
+    font-size: 15px;
+}
+
+.learn-more-button:hover {
+    cursor: pointer;
+}
+
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.img-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+.form-container {
+    margin: 0 auto;
+    padding: 10px;
+    background-image: url("https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_user_personalization&w = 7408q = 80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container input {
+    width: 400px;
+    height: 50px;
+    border: solid rgb(255, 149, 1);
+    border-radius: 15px 0 0 15px;
+    font-size: 20px;
+}
+
+.form-container input::placeholder {
+    padding: 10px;
+}
+
+.form-container button {
+    width: 200px;
+    height: 58px;
+    border: solid #ff8c00;
+    border-radius: 0 15px 15px 0;
+    background-color: #ff8c00;
+    font-size: 20px;
+}
+
+.form-container button:hover {
+    cursor: pointer;
+}
+
+.form-container h1 {
+    font-size: 55px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: rgb(225, 255, 0);
+    -webkit-text-stroke: 1px black;
+}
+
+.our-brands-container {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.button-group-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.button-group-container button {
+    width: 100%;
+    min-height: 110px;
+    border: 2px solid #f5b6c6;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* space between logo and text */
+    font-size: 16px;
+    font-weight: 600;
+    color: #b40101;
+    cursor: pointer;
+    transition: 0.3s ease;
+    padding: 15px;
+    text-align: left;
+}
+
+.button-group-container button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.button-group-container button img {
+    max-height: 45px;
+}
+
+.our-team-container {
+    text-align: center;
+}
+
+.our-team {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-img {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 50%;
+}
+
+.image-grid-container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    max-width: 100%;
+    margin: 20px;
+}
+
+.image-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-item:hover img {
+    transform: scale(1.2);
+}
